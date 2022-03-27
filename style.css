@@ -1,3 +1,4 @@
+/* Things that are defaulted for all elements */
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ p{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* The top header of the website (with all the nav-links) */
 .headhead{
     width: 100%;
     background-position: center;
@@ -19,6 +21,8 @@ p{
     text-align: center;
     background-color: white;
 }
+
+/* The section with RHS Alumni Externship Program and the blurb on it (with HS in background) */
 .header{
     /* viewport height is 100vh or 100% of width */
     min-height: 100vh;
@@ -142,18 +146,60 @@ nav img{
 nav .fa{
     display:none;
 }
-@media(max-width: 700px){
+@media (max-width: 700px){
+    .header{
+        /* viewport height is 100vh or 100% of width */
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(to bottom, transparent, rgb(145, 145, 145)), url("images/finalBanner.png");
+        /* Center the image */
+        background-position: center;
+        /* Resize the background image to cover the entire container */
+        background-size: cover;
+        position: relative;
+        padding-bottom: 0px;
+    }
+
+    .text-box{
+        width: 85%;
+        color: #ffffff;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        text-align: left;
+    }
+
     .text-box h1{
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .text-box p{
-        font-size:15px;
+        font-size:20px;
     }
+    /* nav stuff */
     .nav-links ul li{
         /* horizontal */
         display: block;
+        padding: 8px 12px;
     }
+    .nav-links ul li a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        opacity:100%;
+    }
+    .nav-links ul a{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        opacity:100%;
+        border-radius: 10px;
+        border-color:#fff;
+    }
+    
     .nav-links{
         position:absolute;
         background:#79232E;
@@ -165,12 +211,13 @@ nav .fa{
         z-index:2;
         transition:1s;
     }
+
     nav .fa{
         display:block;
-        color: #fff;
+        color: black;
         margin: 10px;
         font-size: 22px;
-        cursor: pointer;
+        cursor:pointer;
     }
 
     .nav-links ul{
@@ -223,6 +270,36 @@ nav .fa{
 
 .numbers .col:hover{
     box-shadow:none;
+}
+
+/* media for first page */
+@media (max-width: 700px){
+    .numbers div.col{
+        flex-basis:31%;
+        background:white;
+        border-radius:none;
+        padding:10px 12px;
+        box-sizing:none;
+        transition:0.5s;
+    }
+    .first{
+        width:90%;
+        margin: auto;
+        text-align: center;
+        padding: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .first div.col{
+        background-color:rgba(63, 57, 57, 0.064);
+        flex-basis:0%;
+        border-radius:10px;
+        padding:40px 10px;
+        box-sizing:border-box;
+        margin-bottom: 20px;
+    }
+
+
 }
 
 /*two button part of homepage */
@@ -283,7 +360,11 @@ h3{
 }
 
 /* Our Hosts */
-.our-hosts{
+.featured-speakers-home .row{
+    flex-direction: row;
+    padding-top:0px;
+}
+.featured-speakers-home{
     width: 80%;
     margin:auto;
     text-align: center;
@@ -291,13 +372,42 @@ h3{
     padding-bottom: 0px;
 }
 
-.our-hosts h1{
+.featured-speakers-home h1{
     font-size: 30px;
     font-weight: 600;
     color:#79232E;
 }
 
-.our-hosts h4{
+.featured-speakers-home h4{
+    font-size:18px;
+    font-weight:600;
+    color:#79232E;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+@media(max-width:700px){
+    .featured-speakers-home .row{
+        flex-direction: row;
+        padding-top:0px;
+    }
+}
+.featured-speakers-home{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.featured-speakers-home h1{
+    font-size: 30px;
+    font-weight: 600;
+    color:#79232E;
+}
+
+.featured-speakers-home h4{
     font-size:18px;
     font-weight:600;
     color:#79232E;
@@ -314,21 +424,61 @@ h3{
 
 .host-col{
     flex-basis:21%;
-    border-radius:10px;
+    border:1px solid #79232E;
     margin-bottom: 100px;
     position:relative;
     overflow:hidden
-
 }
+
 .host-col img{
     width:100%;
+    height:100%;
 }
+
+
+/* Speaker page and about page  */
+.host-col-abt img{
+    width:100%;
+}
+
+.host-col-abt i{
+    
+    margin:0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.host-col-abt{
+flex-basis:21%;
+border:1px solid #79232E;
+margin-bottom: 100px;
+position:relative;
+overflow:hidden
+}
+
+
+
+@media(max-width:700px){
+    .footer{
+        width:100%;
+        background:#79232E;
+    }
+    .footer p{
+        color:white;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+}
+   
 
 /* footer */
 .footer{
     width:100%;
     text-align:center;
-    padding:30px 0;
+    padding:30px 0px;
     background:#79232E;
 }
 .footer h4{
@@ -339,14 +489,8 @@ h3{
 .footer p{
     color:white;
 }
-.icons .fa{
-    color: #ffffff;
-    margin:0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
 
-/* about us page */
+/* ABOUT US PAGE */
 .sub-header{
     height:20vh;
     width: 100%;
@@ -365,7 +509,6 @@ h3{
     padding-top: 10vh;
     padding-bottom: 0vh;
 }
-
 
 .about-us{
     width:80%;
@@ -419,3 +562,124 @@ h3{
 .about-col img{
     width:100%;
 }
+
+.our-hosts{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.our-hosts h1{
+    font-size: 30px;
+    font-weight: 600;
+    color:#79232E;
+}
+
+.our-hosts h4{
+    font-size:18px;
+    font-weight:600;
+    color:#79232E;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+@media(max-width:700px){
+
+    .sub-header{
+        height:15vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color:white;
+        padding-top: 0px;
+        padding-bottom:0px;
+    }
+
+
+    .about-us h1{
+        font-size: 25px;
+        color:#79232E;
+        margin-top: 0px;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+        text-align:left;
+    }
+
+    .sub-header p{
+        font-size: 20px;
+        color:#79232E;
+        margin-top: 0px;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+
+    .sub-header h1{
+        font-size: 35px;
+    }
+
+    .our-hosts{
+        width: 80%;
+        margin:auto;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+    
+    .our-hosts h1{
+        font-size: 30px;
+        font-weight: 600;
+        color:#79232E;
+    }
+    
+    .our-hosts h4{
+        font-size:18px;
+        font-weight:600;
+        color:#79232E;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .team-col img{
+        width:100%;
+    }
+    
+    .team-col i{
+        
+        margin:0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+    }
+    
+    .team-col{
+    flex-basis:21%;
+    border:1px solid #79232E;
+    margin-bottom: 100px;
+    position:relative;
+    overflow:hidden
+    }
+    
+
+}
+
+/* ?rax sessions and host information */
+
+
+
+
+
+
+
+
+
+
+/* optimization of mobile */
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
