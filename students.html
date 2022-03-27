@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>RAX</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;300;400;600&family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
+<link href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+</head>
+   
+<body> 
+    <section class = "headhead" id="headHead">
+        <nav>
+            <a href="index.html"><img src = "images/finalLogo.png"></a>
+            <!-- tag defines a devision or section in HTML doc -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="students.html">FOR STUDENTS</a></li>
+                    <li><a href="hosts.html">FOR HOSTS</a></li>
+                    <a href="mailto:haeeun1227@gmail.com"class="hero-btn red-btn">CONTACT</a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            
+        </nav>
+    </section>
+    <section class="sub-header"> 
+        <h1>For Students</h1>
+    </section> 
+
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Meep Student</h1>
+                <p>These are not "guest speakers", but rather interactive mentorship sessions. Like a breakout room, students are encouraged to converse, participate, and ask questions. You should plan to have your camera on, and be dressed appropriately (smart casual; absolutely no pajamas allowed). These alumni/parents are taking valuable time out of their busy schedules to meet with you. Please be on time, act professionally, be courteous, and most of all...have fun! 
+
+                    If you have class/classes during your assigned session, you will be excused from that class (Field Trip) as long as you attend your session. If you sign-up for a session that meets on a date/time you are scheduled to be in an RHS classroom, you might need to relocate and use earbuds for the session.
+                    
+                    We hope you enjoy these sessions, gain valuable advice, and make some new connections! </p>
+                <a href="https://www.rhsalumniassociation.org/rhs-externship-student.php" class="hero-btn top-btn">Apply Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/student.png">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <p>© Copyright 2022 Ridgewood High School Alumni Association <br>Website developed by <i class = "fa fa-star"></i> Audrey Shin <i class = "fa fa-star"></i> RHS class of 2022</p>
+    </section>
+
+
+
+
+    <!-- javaScript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
