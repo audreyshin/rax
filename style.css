@@ -683,3 +683,10 @@ html, body {
   body {
     position: relative
   }
+
+
+  hr {
+    height:5px;
+    border-width:0;
+    background-color:#b899aa;
+  }
