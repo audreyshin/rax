@@ -746,4 +746,20 @@ html, body {
   }
 
 
+  .comp-col i{
+    margin:0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.comp-col{
+flex-basis:21%;
+margin-bottom: 100px;
+position:relative;
+overflow:hidden
+}
+
+
+
+
 
