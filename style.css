@@ -747,9 +747,9 @@ html, body {
 
 
   .comp-col i{
-    margin:0 13px;
+    margin:18 0px;
     cursor: pointer;
-    padding: 18px 0;
+    padding: 0px 13;
 }
 
 .comp-col{
