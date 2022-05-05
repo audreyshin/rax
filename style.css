@@ -291,13 +291,31 @@ nav .fa{
         padding-bottom: 0px;
     }
     .first div.col{
-        background-color:rgba(63, 57, 57, 0.064);
+        background-color:rgba(223, 201, 201, 0.516);
         flex-basis:0%;
         border-radius:10px;
         padding:40px 10px;
         box-sizing:border-box;
         margin-bottom: 20px;
     }
+
+    .test{
+        width:90%;
+        margin: auto;
+        text-align: center;
+        padding: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .test div.col{
+        background-color:rgba(223, 201, 201, 0.516);
+        flex-basis:0%;
+        border-radius:10px;
+        padding:40px 10px;
+        box-sizing:border-box;
+        margin-bottom: 20px;
+    }
+
 
 
 }
@@ -312,8 +330,16 @@ nav .fa{
     padding-bottom: 100px;
 }
 
+.test{
+    width:90%;
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
 .col{
-    background-color:rgba(63, 57, 57, 0.064);
+    background-color:rgba(223, 201, 201, 0.516);
     flex-basis:48%;
     border-radius:10px;
     padding:40px 10px;
@@ -333,6 +359,18 @@ nav .fa{
     padding:30px;
 }
 
+.test h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.test p{
+    color:rgb(82, 46, 46);
+    font-size: 18px;
+    font-weight:300;
+    line-height:22px;
+    padding:30px;
+}
 .row{
     margin-top: 5%;
     display: flex;
@@ -349,6 +387,11 @@ h3{
 
 .col:hover{
     box-shadow: 0 0 20px 0px #79232E;
+    /* rgba(255, 200, 200, 0.2) */
+}
+
+.testimonial-col:hover{
+    box-shadow: 0 0 20px 0px #9f6a71;
     /* rgba(255, 200, 200, 0.2) */
 }
 
