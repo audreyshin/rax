@@ -1,10 +1,6 @@
- #My name is Audrey Shin and I am currently a senior at Ridgewood High School in New Jersey
+ #My name is Audrey Shin and I graduated Ridgewood High School in 2023
 
-
- #If you are editing this website in the future I am sorry. My code will be overly messy and you probably will not be able to undestand anything, but hopefully you can decipher it to make updates. 
-
-
-
+ #The purpose of this website is to share information about the Ridgewood High School Externship Program! In the making of this website, CSS/HTML and JavaScript was used. 
 
 # Audrey Shin Ridgewood High School class of 2022
  
